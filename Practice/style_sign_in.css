@@ -1,0 +1,9 @@
+div{
+                margin-top: 250px;
+                margin-left: 750px;
+                text-align: center;
+                width: 350px;
+                
+                border: 1px solid blue;
+                background-color: rgb(224,255,255);
+}

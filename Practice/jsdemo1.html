@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demo 1</title>
+</head>
+
+<body>
+    <h2>Js demo - Tables <i class="fas fa-wordpress-simple    "></i></h2>
+    <div>
+        Number: <input type="number" num="number" id="number" >
+    <br><br>
+        Limit: <input type="number" lim="limit" id="limit" ><br><br>
+        <button type="button" onclick="multiply()">Multiply</button>
+        <h3 id="banner"></h3>
+    </div>
+
+    <script>
+
+        function multiply() {
+            var num = document.getElementById('number').value;
+            var lim = document.getElementById('limit').value;
+            var output="";
+            for(var i=parseInt(1);i<=parseInt(lim);i++)
+            {
+                var mul=parseInt(num)*i;
+                output+=num+" X "+i+" = "+mul + "<br/>";
+                //var pTag= document.getElementById('banner');
+			    //pTag.innerHTML += (num*i) + "<br/>"
+            }
+            
+            //console.log('Name = ' + name + ' and data type of name is ' + typeof name)
+            document.getElementById('banner').innerHTML = output;
+            //name = 1234
+            //console.log('Name = ' + name + ' and data type of name is ' + typeof name)*/
+        }
+    </script>
+</body>
+
+</html>
